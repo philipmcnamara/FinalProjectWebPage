@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="/w3css/3/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+<head>
+    <style>
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+        }
+
+        li {
+            float: left;
+            border-right:1px solid #bbb;
+        }
+
+        li:last-child {
+            border-right: none;
+        }
+
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        li a:hover:not(.active) {
+            background-color: #111;
+        }
+
+        .active {
+            background-color: #1F3F78;
+        }
+        h1 {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size:100px;
+            color:white;
+            margin:10px;
+            text-align: center;
+        }
+        h2 {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size:50px;
+            color:black;
+            margin:10px;
+            text-align: center;
+        }
+        h3 {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size:35px;
+            color:black;
+            margin:10px;
+            text-align: center;
+        }
+        p {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size:20px;
+            color:black;
+            margin:10px;
+            text-align: center;
+        }
+        body {
+            background-color: #8BA1CA;
+        }
+        .center {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Navigation -->
+<nav class="w3-bar w3-black">
+    <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="planning">Planning</a></li>
+        <li><a href="/data">Data</a></li>
+        <li style="float:right"><a href="/about">About</a></li>
+    </ul>
+</nav>
+<!-- Intro -->
+<div>
+    <h1>The Data</h1>
+    <p><em>MonogoDB - has ruined me </em></p>
+</div>
+<hr>
+
+<!-- Intro -->
+<div class="center">
+    <h2>Method behind the madness</h2><br>
+        <p>Before we begin lets address the elephant in the room. "Why, for the love of god, did I choose mongo for this."</p> <br>
+        <p>The simple answer is, I already know how to use SQL. I have had very limited experience in dealing with non-relational data and this is my last time to do so while I still have
+        highly skilled lecturers available to give me a pole in the correct direction if I get stuck. The reality of th situation is this project would have be far better suited to SQL, however bar a mongoDB pay wall
+        that blocked me linking my PowerBi up to my mongo cloud everything worked out ok anyway. I did have to build a relational database with my mongo info in Power Bi anyway so there's pictures of that available below.</p>
+</div>
+<hr>
+
+<!-- Split Divs -->
+<div style="width: 100%;">
+    <div class="center" style="width: 50%; height: 900px; float: left; background: white; border-right:1px solid black;">
+        <h3>Mongo - What the data collected looks like</h3>
+        <img class="mySlides" src="images/mongo.png" style="width:50%">
+        <p>It looks like unstructured mongo data with a bunch of Arrays in there for good measure.</p>
+    </div>
+    <div class="center" style="margin-left: 50%; height: 900px; background: white;">
+        <h3>Re-structuring Unstructured data</h3>
+        <img class="mySlides" src="images/datamodel.png" style="width:50%">
+        <p> I centered all of the data around the "Projects" table, not unlike the centre of a flower with the remaining tables connected to it like petals, I did have to refactor some code to ensure the user
+            id was added to the Porjects table and set t up so one user can have many Projects. After that it was pretty simple. </p>
+    </div>
+</div>
+
+<!-- Split Divs -->
+<div style="width: 100%;">
+    <div class="center" style="width: 100%; height: 1000px; float: left; background: white; border-right:1px solid black;">
+        <h3>PowerBi Dashboard</h3>
+        <img class="mySlides" src="images/dashboard.png" style="width:50%">
+        <p>The dashboard was designed in accordance with the overarching theme of minimalism that the rest of the Website has. I created a WIT branded backdrop in PowerPoint then saved it as an image and uploaded it as my background for the dashboard.
+        From there it was a simple matter of deciding which graphs to give the space to. </p>
+    </div>
+</div>
+
+<div class="center">
+    <footer class="w3-container w3-padding-64 w3-center w3-black w3-xlarge">
+        <p1><i>I Don't have any other "Social" media, as I hate that stuff. But you can add me on LinkedIn if you like</i></p1>
+        <p></p>
+        <a href="https://www.linkedin.com/in/philip-mcnamara-a4063333/"><i class="fa fa-linkedin"></i></a>
+    </footer>
+</div>
+
+</body>
+</html>
+

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="/w3css/3/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+<head>
+    <style>
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+        }
+
+        li {
+            float: left;
+            border-right:1px solid #bbb;
+        }
+
+        li:last-child {
+            border-right: none;
+        }
+
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        li a:hover:not(.active) {
+            background-color: #111;
+        }
+
+        .active {
+            background-color: #1F3F78;
+        }
+        h1 {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size:100px;
+            color:white;
+            margin:10px;
+            text-align: center;
+        }
+        p {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size:30px;
+            color:black;
+            margin:10px;
+            text-align: center;
+        }
+        p1 {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size:15px;
+            color:white;
+            margin:10px;
+            text-align: center;
+        }
+        body {
+            background-color: #8BA1CA;
+        }
+        .center {
+            border: 5px solid white;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Navigation -->
+<nav class="w3-bar w3-black">
+    <ul>
+        <li><a class="active" href="/">Home</a></li>
+        <li><a href="planning">Planning</a></li>
+        <li><a href="/data">Data</a></li>
+        <li style="float:right"><a href="/about">About</a></li>
+    </ul>
+</nav>
+<div>
+<h1>Digital Lean</h1>
+<p><em>Like regular Lean - only it caused me 4 months of anxiety</em></p>
+</div>
+
+<!-- Slide Show -->
+<section>
+    <img class="mySlides" src="images/home.png" style="width:100%">
+    <img class="mySlides" src="images/dashboard.png" style="width:100%">
+    <img class="mySlides" src="images/newproject.png" style="width:100%">
+</section>
+
+<!-- Description -->
+<div>
+    <h1 >The Problem Solver</h1>
+    <p> <i>Digital Form</i></p>
+    <p> This process of extracting the data from the A3 can be very time consuming especially when the number of projects I manage can be >40 per month.
+        There is also an issue of handwriting being indecipherable and this leads to data loss.
+        There is also an environment impact to consider from hundreds of companies utilising this method every year wasting thousands of sheets of paper.  </p>
+</div>
+<!-- Footer -->
+<div class="center">
+    <footer class="w3-container w3-padding-64 w3-center w3-black w3-xlarge">
+        <p1><i>I Don't have any other "Social" media, as I hate that stuff. But you can add me on LinkedIn if you like</i></p1>
+        <p></p>
+        <a href="https://www.linkedin.com/in/philip-mcnamara-a4063333/"><i class="fa fa-linkedin"></i></a>
+    </footer>
+</div>
+
+
+<script>
+    // Automatic Slideshow - change image every 3 seconds
+    var myIndex = 0;
+    carousel();
+
+    function carousel() {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+        }
+        myIndex++;
+        if (myIndex > x.length) {myIndex = 1}
+        x[myIndex-1].style.display = "block";
+        setTimeout(carousel, 3000);
+    }
+</script>
+
+</body>
+</html>
+
