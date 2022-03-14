@@ -6,12 +6,13 @@ module.exports = [
     { method: 'GET', path: '/data', config: Controller.data },
     { method: 'GET', path: '/about', config: Controller.about },
     {
-        method: 'GET',
-        path: '/{param*}',
+        method: "GET",
+        path: "/{param*}",
         handler: {
             directory: {
-                path: './public',
-            },
+                path: "./public"
+            }
         },
+        options: { auth: false }
     },
 ];
