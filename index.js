@@ -2,6 +2,8 @@
 
 const Hapi = require('@hapi/hapi');
 const Inert = require('@hapi/inert');
+const env = require("dotenv");
+const dotenv = require("dotenv");
 
 const server = Hapi.server({
     port: process.env.PORT || 3000,
