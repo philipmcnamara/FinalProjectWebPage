@@ -16,7 +16,7 @@ const MainPage = {
     },
     about: {
         handler: function (request, h) {
-            return h.file('./app/views/about.html');
+            return h.file('./app/views/about.hbs');
         },
     },
 };
